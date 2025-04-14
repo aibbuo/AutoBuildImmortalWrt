@@ -79,8 +79,8 @@ elif [ "$count" -gt 1 ]; then
       echo "PPPoE is enabled at $(date)" >> $LOGFILE
       # 设置ipv4宽带拨号信息
       uci set network.wan.proto='pppoe'
-      uci set network.wan.username=$pppoe_account
-      uci set network.wan.password=$pppoe_password
+      uci set network.wan.username='02008017806@163.gd'
+      uci set network.wan.password='OWBVCOIP'
       uci set network.wan.peerdns='1'
       uci set network.wan.auto='1'
       # 设置ipv6 默认不配置协议
@@ -101,7 +101,7 @@ uci commit
 
 # 设置编译作者信息
 FILE_PATH="/etc/openwrt_release"
-NEW_DESCRIPTION="Compiled by wukongdaily"
+NEW_DESCRIPTION="BIAO GUO"
 sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
 
 exit 0
