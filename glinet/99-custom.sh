@@ -28,7 +28,7 @@ uci set dropbear.@dropbear[0].Interface=''
 
 # 设置编译者信息为 BIAO GUO
 FILE_PATH="/etc/openwrt_release"
-NEW_DESCRIPTION="BIAO GUO"
+NEW_DESCRIPTION="GUO-263"
 sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
 
 # 提交所有 UCI 更改
